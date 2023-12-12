@@ -1,0 +1,35 @@
+.hero {
+  width: 100vw;
+  background: transparent url('../assets/hero-background.jpg') no-repeat bottom center;
+  background-size: cover;
+  
+  &-container {
+    padding-top: 120px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  &-title {
+    font-size: 48px;
+    line-height: 70px;
+    position: relative;
+
+    strong {
+      font-weight: $font-bold;
+    }
+
+    &::after {
+      content: ' ';
+      display: block;
+      width: 120px;
+      height: 15px;
+      background-color: $color-alternate;
+      position: absolute;
+      bottom: -45px;
+      left: 0;
+    }
+  }
+}

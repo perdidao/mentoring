@@ -1,0 +1,13 @@
+# Filtes
+*.map
+*.cache
+.env
+.env.production
+.env.homolog
+.DS_Store
+.git
+
+# Folders
+node_modules/
+dist/
+.sass-cache

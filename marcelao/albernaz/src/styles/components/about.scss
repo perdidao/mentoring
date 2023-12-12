@@ -1,0 +1,54 @@
+.about {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+  &::before {
+    content: ' ';
+    display: block;
+    width: 773px;
+    height: 418px;
+    background: url('../assets/watermark.png') no-repeat center center;
+    position: absolute;
+    top: 100px;
+    left: 4vw;
+    pointer-events: none;
+  }
+
+  &-container {
+    max-width: 37.5vw;
+    margin-right: 4.16vw;
+  }
+
+  &-text {
+    letter-spacing: 0.04em;
+    line-height: 30px;
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-photo {
+    display: block;
+    width: 39.58vw;
+  }
+
+  @media screen and (max-width: 1380px) {
+    justify-content: space-between;
+
+    &-container {
+      max-width: 40vw;
+      margin-right: 0;
+      margin-left: 5vw;
+    }
+
+    &-photo {
+      display: block;
+      width: 50vw;
+    }
+  }
+}
